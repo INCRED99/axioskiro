@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-gradient-to-br from-green-50 to-blue-50 text-gray-900;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-green-600 border-2 border-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent;
+  }
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.chatbot-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.eco-particle {
+  animation: float 4s ease-in-out infinite;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.game-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.learning-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
