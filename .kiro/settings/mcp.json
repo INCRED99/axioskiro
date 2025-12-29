@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "web-search": {
+      "command": "uvx",
+      "args": ["mcp-server-web-search"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": ["web_search", "web_fetch"]
+    }
+  }
+}
