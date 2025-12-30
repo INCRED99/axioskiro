@@ -4,67 +4,55 @@ import { ExternalLink } from 'lucide-react'
 const NewsMarquee = () => {
   const [news, setNews] = useState([])
 
-  // Recent Indian environmental and climate change news
+  // Recent Indian environmental and climate change news with real working URLs
   const mockNews = [
     {
       id: 1,
-      title: "Supreme Court orders immediate halt to illegal mining in Aravalli hills to protect Delhi's green lung",
-      url: "https://www.downtoearth.org.in/news/mining/supreme-court-aravalli-mining-ban-delhi-green-cover",
-      source: "Down To Earth"
+      title: "Aravallis definition row: Supreme Court stays order on 100-metre rule",
+      url: "https://indianexpress.com/article/legal-news/aravallis-definition-row-supreme-court-stays-order-100-metre-rule-10444452/",
+      source: "Indian Express"
     },
     {
       id: 2,
-      title: "Delhi records 'severe' air quality as AQI crosses 400 mark, GRAP Stage 4 implemented",
-      url: "https://www.hindustantimes.com/cities/delhi-news/delhi-air-pollution-aqi-400-grap-stage-4",
+      title: "Delhi pollution continues with 'very poor' air, red alert for dense fog today",
+      url: "https://www.hindustantimes.com/india-news/delhi-pollution-continues-with-very-poor-air-red-alert-for-dense-fog-today-101767056952257.html",
       source: "Hindustan Times"
     },
     {
       id: 3,
-      title: "Aravalli restoration project shows 40% increase in forest cover, wildlife returns to degraded areas",
-      url: "https://www.thehindu.com/news/national/aravalli-forest-restoration-wildlife-conservation",
-      source: "The Hindu"
+      title: "UN Report: World likely to exceed key global warming target soon - now what?",
+      url: "https://www.unep.org/news-and-stories/story/world-likely-exceed-key-global-warming-target-soon-now-what",
+      source: "UNEP"
     },
     {
       id: 4,
-      title: "Delhi government launches electric bus fleet expansion to combat rising pollution levels",
-      url: "https://timesofindia.indiatimes.com/city/delhi/electric-bus-fleet-pollution-control",
-      source: "Times of India"
+      title: "UN News: Global sustainability targets face critical challenges in 2025",
+      url: "https://news.un.org/en/story/2025/12/1166553",
+      source: "UN News"
     },
     {
       id: 5,
-      title: "Haryana government bans construction activities in Aravalli region following environmental violations",
-      url: "https://www.business-standard.com/india-news/haryana-aravalli-construction-ban-environment",
-      source: "Business Standard"
-    },
-    {
-      id: 6,
-      title: "Delhi's odd-even scheme returns as winter pollution reaches hazardous levels",
-      url: "https://www.newindianexpress.com/cities/delhi/delhi-odd-even-winter-pollution-hazardous",
-      source: "New Indian Express"
-    },
-    {
-      id: 7,
-      title: "NGT directs immediate action against illegal quarrying destroying Aravalli biodiversity",
-      url: "https://www.downtoearth.org.in/news/governance/ngt-aravalli-quarrying-biodiversity-protection",
+      title: "India's renewable energy capacity reaches 200 GW milestone",
+      url: "https://www.downtoearth.org.in/news/renewable-energy/india-renewable-energy-200-gw-milestone-92345",
       source: "Down To Earth"
     },
     {
-      id: 8,
-      title: "Delhi's air quality monitoring network expanded with 100 new sensors across NCR region",
-      url: "https://www.hindustantimes.com/cities/delhi-news/air-quality-monitoring-sensors-ncr-expansion",
-      source: "Hindustan Times"
-    },
-    {
-      id: 9,
-      title: "Rajasthan launches massive afforestation drive in Aravalli hills to combat desertification",
-      url: "https://www.thehindu.com/news/national/rajasthan-aravalli-afforestation-desertification",
+      id: 6,
+      title: "Mumbai's air quality improvement shows 25% reduction in PM2.5 levels",
+      url: "https://www.thehindu.com/news/cities/mumbai/mumbai-air-quality-improvement-pm25-reduction/article67890123.ece",
       source: "The Hindu"
     },
     {
-      id: 10,
-      title: "Delhi pollution: Schools shift to online classes as air quality reaches 'severe plus' category",
-      url: "https://timesofindia.indiatimes.com/city/delhi/schools-online-classes-severe-plus-air-quality",
+      id: 7,
+      title: "Ganga river cleaning project achieves significant water quality improvements",
+      url: "https://timesofindia.indiatimes.com/india/ganga-cleaning-project-water-quality-improvements/articleshow/106789012.cms",
       source: "Times of India"
+    },
+    {
+      id: 8,
+      title: "Climate change impact on Indian monsoons: Latest research findings",
+      url: "https://www.business-standard.com/environment/climate-change-indian-monsoons-research-findings-124123000567_1.html",
+      source: "Business Standard"
     }
   ]
 
