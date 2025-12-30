@@ -20,7 +20,12 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: [
+    'http://localhost:3000', 
+    'http://localhost:3001',
+    'https://your-app-name.vercel.app', // Replace with your actual Vercel URL
+    /\.vercel\.app$/ // Allow any Vercel subdomain
+  ],
   credentials: true
 }));
 app.use(express.json());
