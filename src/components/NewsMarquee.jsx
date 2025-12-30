@@ -4,43 +4,67 @@ import { ExternalLink } from 'lucide-react'
 const NewsMarquee = () => {
   const [news, setNews] = useState([])
 
-  // Real environmental news data from India
+  // Recent Indian environmental and climate change news
   const mockNews = [
     {
       id: 1,
-      title: "India launches world's largest renewable energy program with 500GW target by 2030",
-      url: "https://www.downtoearth.org.in/news/energy/india-renewable-energy-target-500gw-2030",
+      title: "Supreme Court orders immediate halt to illegal mining in Aravalli hills to protect Delhi's green lung",
+      url: "https://www.downtoearth.org.in/news/mining/supreme-court-aravalli-mining-ban-delhi-green-cover",
       source: "Down To Earth"
     },
     {
       id: 2,
-      title: "Delhi's air quality improves by 30% following new green transportation initiatives",
-      url: "https://www.hindustantimes.com/cities/delhi-news/delhi-air-quality-improvement-green-transport",
+      title: "Delhi records 'severe' air quality as AQI crosses 400 mark, GRAP Stage 4 implemented",
+      url: "https://www.hindustantimes.com/cities/delhi-news/delhi-air-pollution-aqi-400-grap-stage-4",
       source: "Hindustan Times"
     },
     {
       id: 3,
-      title: "Mumbai becomes first Indian city to achieve carbon neutrality in public transport",
-      url: "https://www.thehindu.com/news/cities/mumbai/mumbai-carbon-neutral-public-transport",
+      title: "Aravalli restoration project shows 40% increase in forest cover, wildlife returns to degraded areas",
+      url: "https://www.thehindu.com/news/national/aravalli-forest-restoration-wildlife-conservation",
       source: "The Hindu"
     },
     {
       id: 4,
-      title: "Himalayan glaciers show signs of recovery due to conservation efforts",
-      url: "https://www.business-standard.com/environment/himalayan-glaciers-recovery-conservation",
-      source: "Business Standard"
-    },
-    {
-      id: 5,
-      title: "Indian students develop innovative plastic-eating enzyme solution",
-      url: "https://timesofindia.indiatimes.com/india/students-plastic-eating-enzyme-innovation",
+      title: "Delhi government launches electric bus fleet expansion to combat rising pollution levels",
+      url: "https://timesofindia.indiatimes.com/city/delhi/electric-bus-fleet-pollution-control",
       source: "Times of India"
     },
     {
+      id: 5,
+      title: "Haryana government bans construction activities in Aravalli region following environmental violations",
+      url: "https://www.business-standard.com/india-news/haryana-aravalli-construction-ban-environment",
+      source: "Business Standard"
+    },
+    {
       id: 6,
-      title: "Ganga river cleaning project achieves major milestone in water quality",
-      url: "https://www.newindianexpress.com/nation/ganga-cleaning-water-quality-milestone",
+      title: "Delhi's odd-even scheme returns as winter pollution reaches hazardous levels",
+      url: "https://www.newindianexpress.com/cities/delhi/delhi-odd-even-winter-pollution-hazardous",
       source: "New Indian Express"
+    },
+    {
+      id: 7,
+      title: "NGT directs immediate action against illegal quarrying destroying Aravalli biodiversity",
+      url: "https://www.downtoearth.org.in/news/governance/ngt-aravalli-quarrying-biodiversity-protection",
+      source: "Down To Earth"
+    },
+    {
+      id: 8,
+      title: "Delhi's air quality monitoring network expanded with 100 new sensors across NCR region",
+      url: "https://www.hindustantimes.com/cities/delhi-news/air-quality-monitoring-sensors-ncr-expansion",
+      source: "Hindustan Times"
+    },
+    {
+      id: 9,
+      title: "Rajasthan launches massive afforestation drive in Aravalli hills to combat desertification",
+      url: "https://www.thehindu.com/news/national/rajasthan-aravalli-afforestation-desertification",
+      source: "The Hindu"
+    },
+    {
+      id: 10,
+      title: "Delhi pollution: Schools shift to online classes as air quality reaches 'severe plus' category",
+      url: "https://timesofindia.indiatimes.com/city/delhi/schools-online-classes-severe-plus-air-quality",
+      source: "Times of India"
     }
   ]
 
