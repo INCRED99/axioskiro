@@ -53,7 +53,7 @@ const GeminiChatbot = () => {
     try {
       // Call our backend API (use production URL in production)
       const apiUrl = import.meta.env.PROD 
-        ? 'https://ecolearn-backend.onrender.com/api/chatbot'  // Replace with your actual Render URL
+        ? 'https://axioskiro-1.onrender.com/api/chatbot'
         : '/api/chatbot';
         
       const response = await fetch(apiUrl, {

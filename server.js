@@ -23,8 +23,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000', 
     'http://localhost:3001',
-    'https://your-app-name.vercel.app', // Replace with your actual Vercel URL
-    /\.vercel\.app$/ // Allow any Vercel subdomain
+    /\.vercel\.app$/, // Allow any Vercel subdomain
+    'https://axioskiro-1.onrender.com' // Allow your own backend for testing
   ],
   credentials: true
 }));
