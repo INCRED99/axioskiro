@@ -51,8 +51,12 @@ const GeminiChatbot = () => {
     setShowSuggestions(false)
 
     try {
-      // Call our backend API
-      const response = await fetch('/api/chatbot', {
+      // Call our backend API (use production URL in production)
+      const apiUrl = import.meta.env.PROD 
+        ? 'https://ecolearn-backend.onrender.com/api/chatbot'  // Replace with your actual Render URL
+        : '/api/chatbot';
+        
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
